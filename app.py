@@ -26,10 +26,13 @@ with st.sidebar:
     st.markdown('1. Analisis Nilai UTBK\n2. Prediksi Total Nilai UTBK\n3. Dashboard Visualisasi UTBK')
 
 # Load metadata and models
-OUT_DIR = Path('/app') if Path('/app').exists() else Path(__file__).parent
-model_dir = Path(OUT_DIR) / 'models'
+OUT_DIR = Path(__file__).parent
+model_dir = OUT_DIR / "models"
+
 if not model_dir.exists():
-    model_dir = Path('/mnt/data/streamlit_utbk_portfolio')  # fallback to environment path
+    st.error("Folder 'models' tidak ditemukan. Pastikan sudah diunggah ke repo GitHub.")
+    st.stop()
+
 
 try:
     reg = joblib.load(model_dir / 'reg_model.pkl')
