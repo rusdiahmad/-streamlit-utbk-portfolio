@@ -1,0 +1,65 @@
+{
+  "numeric_columns": [
+    "TD",
+    "TO 1",
+    "TO 2",
+    "TO 3",
+    "TO 4",
+    "TO 5",
+    "TO 6",
+    "TO 7",
+    "RATA- RATA TO 4 S.D 7",
+    "ESTIMASI NILAI MINIMUM",
+    "ESTIMASI RATA-RATA",
+    "ESTIMASI NILAI MAKSIMUM",
+    "PASSING GRADE PIL 1",
+    "PASSING GRADE PIL 2",
+    "PASSING GRADE PIL 3",
+    "PASSING GRADE PIL 4",
+    "PU",
+    "PK",
+    "PPU",
+    "PBM",
+    "LIND",
+    "LING",
+    "PM",
+    "Rata-rata",
+    "Ranking"
+  ],
+  "total_threshold_median": 14502.61,
+  "regression_metrics": {
+    "mae": 18545093523009.68,
+    "rmse": 64242088424843.93,
+    "r2": -6.027078030336452e+21
+  },
+  "classification_metrics": {
+    "accuracy": 0.8333333333333334,
+    "classification_report": {
+      "0": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1-score": 0.8571428571428571,
+        "support": 6
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.8,
+        "support": 6
+      },
+      "accuracy": 0.8333333333333334,
+      "macro avg": {
+        "precision": 0.875,
+        "recall": 0.8333333333333333,
+        "f1-score": 0.8285714285714285,
+        "support": 12
+      },
+      "weighted avg": {
+        "precision": 0.875,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8285714285714286,
+        "support": 12
+      }
+    }
+  }
+}
